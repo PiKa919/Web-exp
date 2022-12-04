@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Mars;
+    src: url(Mars.ttf);
+}
+  
+h2 {
+    color: rgb(21, 49, 233);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: Mars;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    font-size: 120%;
+  }
+  
+  .card {
+    background: black;
+    color:aqua;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    margin: 0.5em;
+    border: none;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  input.search-bar{
+    border:none;
+    outline: none;
+    padding: 0.5em;
+    border-radius: 10px;
+    background: #7c7c7c2b;
+    color: white;
+    width: calc(100% - 100px);
+  }
+
+  button:hover {
+    background: #7c7c7c6b;
+  }
+
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
